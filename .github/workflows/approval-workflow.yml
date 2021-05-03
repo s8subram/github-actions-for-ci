@@ -1,1 +1,3 @@
 name: Brain is mush
+
+on: pull_request_review
