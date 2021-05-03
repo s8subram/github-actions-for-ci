@@ -1,0 +1,12 @@
+name: Brain is mush
+on: pull_request_review
+jobs:
+  labelWhenApproved:
+    runs-on: ubuntu-latest
+  steps:
+    name: So tired
+  - uses: 
+    env:
+      APPROVALS: "1"
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ADD_LABEL: "Broccoli"
