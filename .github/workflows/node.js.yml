@@ -34,7 +34,10 @@ jobs:
           name: webpack artifacts
           path: public/
 
-  test:
+      - uses: actions/upload-artifact@master
+        with:
+          name: webpack artifacts
+          path: public/
 
     runs-on: ubuntu-latest
 
@@ -55,4 +58,3 @@ jobs:
         npm test
       env:
         CI: true    
-
